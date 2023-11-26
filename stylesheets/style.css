@@ -1,0 +1,450 @@
+/* Small screen styles */
+
+body{
+    margin: 0;
+    padding: 0;
+    /* font-size: 16px; */
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+/* for small screen (mobile) index page */
+@media only screen and (max-width: 768px) {
+
+    .showcase-img{
+        margin: 0;
+        background-color: #053c5e;
+        padding-bottom: 30px;
+    }
+
+    .welcome-h2{
+        padding: 50px 0 0 0;
+        letter-spacing: 2px;
+        font-weight:900 ;
+        color: white;
+    }
+
+    /* showcase get started button */
+    .get-started{
+        background-color: white;
+        color: #053c5e;
+        border: 1px solid #053c5e;
+        width: 50%;
+        height: 8vh;
+        margin-top: 20px;
+    }
+
+    .get-started:hover{
+        background-color: whitesmoke;
+        color: black;
+        transition: 0.5ms ease-in-out;
+    }
+
+    .learning-students{
+        background-image: url(../images/img2.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+        margin: 0;
+        border: 1px solid #053c5e;
+        opacity: 100%;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+
+    /* .learning-students:hover{
+        transition: 0.3s ease;
+        opacity: 100%;
+    } */
+
+    .students-in-class{
+        background-image: url(../images/img3.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+        margin: 0;
+        opacity: 100%;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+
+    /* .students-in-class:hover{
+        transition: 0.3s ease-in-out;
+        opacity: 100%;
+    } */
+
+    .connect-students{
+        background-image: url(../images/img4.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+        margin: 0;
+        opacity: 100%;
+        border: 1px solid white;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+
+    /* .connect-students:hover{
+        transition: 0.3s ease;
+        opacity: 100%;
+    } */
+
+    .easy-learning{
+        background-image: url(../images/img.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+        margin: 0;
+        opacity: 100%;
+        border: 1px solid white;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+
+    /* .easy-learning:hover{
+        transition: 0.3s ease;
+        opacity: 100%;
+    } */
+
+    .card-style{
+        margin: 50px 0 20px 0;
+        border: 0;
+        border-radius: 1em;
+        border: 1px solid #053c5e;
+    }
+
+    .card-body{
+        font-size: 20px;
+    }
+
+    .more-info{
+        margin: 50px 0 20px 0;
+        padding: 20px 10px 20px 10px;
+        background-color: #F2F2F6ff;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 18px;
+    }
+
+    footer{
+        background-color: black;
+        color: white;
+        padding: 15px;
+    }
+
+}
+
+
+/* for small screen (mobile) login and signup page */
+@media only screen and (max-width: 768px) {
+
+    .body {
+        transition: background-color 0.3s ease;
+        font-family: 'Noto Sans Display', sans-serif;
+    }
+
+    /* small screen login and signup navbar */
+    .login-page-navbar, 
+    .signup-page-navbar{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        font-size: 16px;
+        padding: 0;
+        top: 0;
+    }
+
+    .back-btn{
+        margin: 10px 0 10px 20px;
+        list-style: none;
+    }
+
+    .text-signup,
+    .text-login{
+        margin: 10px 0 10px 0;
+        text-align: center;
+        list-style: none;
+        /* font-weight: bold; */
+    }
+
+    .more-vert{
+        margin: 10px 20px 10px 0;
+        list-style: none;
+    }
+
+    /* small screen login and signup main-div */
+    .login-main-div,
+    .signup-main-div{
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 100vh;
+        font-family: 'Noto Sans Display', sans-serif;
+    }
+
+    .signup-main-div{
+        padding: 20px 0 0 0;
+    }
+
+    .hide-input-div{
+        display: none;
+    }
+
+    /* small screen login and signup section */
+    .login-section, 
+    .signup-section{
+        width: 90%;
+        margin: 0;
+    }
+
+    /* small screen login and signup inputs elements */
+    .login-signup-input{
+        width: 100%;
+        height: 3em;
+        padding: 0 0 0 15px;
+        border: 0;
+        margin: 0 0 15px 0;
+    }
+
+   /* small screen login and signup email and pass */
+    .login-signup-input-label{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-weight: normal;
+        margin-top: 0;
+        padding-top: 0;
+        letter-spacing: 1px;
+    }
+
+    .forgot-password{
+        margin: 10px 0 5px 0;
+    }
+    
+    .links-color{
+        color: #053c5e;
+    }
+
+    .checkbox{
+        width: 15px;
+        height: 15px;
+        border-radius: 0.2em;
+    }
+
+    .checkbox-info{
+        font-size: 18px;
+    }
+
+    .login-btn{
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    .info-icon{
+        position: absolute;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+
+    .continue-btn{
+        /* margin-top: 10px; */
+        color: #053c5e;
+        font-weight: bold;
+    }
+
+    .signup-btn{
+        margin-top: 15px;
+        color: #053c5e;
+        font-weight: bold;
+    }
+
+    .submit-btn{
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    .login-btn, 
+    .signup-btn,
+    .continue-btn,
+    .submit-btn{
+        width: 100%;
+        height: 2.8em;
+        padding: 0;
+        /* border-radius: 0.3em; */
+        font-size: 18px;
+    }
+
+    .bottom-popup{
+        position: fixed;
+        width: 100%;
+        height: 20vh;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        /* margin: 20px; */
+        /* border: 1px solid #053c5e; */
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+        padding: 30px ;
+        bottom: 0;
+        display: none;
+    }
+
+    /* hide big screen styles */
+    /* .big-screen-navbar{
+        display: none;
+    } */
+}
+
+
+
+@media only screen and (min-width: 769px){
+
+    .body {
+        margin: 0;
+        background-image: url(../images/document_2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .big-screen-navbar{
+        margin: 0;
+        background-color: green;
+    }
+    
+    .big-screen-nav-ul{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .signup-section,
+    .login-section{
+        background-color: white;
+        width: 40%;
+        /* border: 1px solid gray; */
+        padding: 20px 80px 20px 80px;
+        border-radius: 3em;
+    }
+
+    /* .signup-navbar-brand,
+    .empty-li{
+        list-style: none;
+    } */
+
+    /* big screen login and signup main-div */
+    .login-main-div,
+    .signup-main-div{
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .hide-input-div{
+        display: none;
+    }
+
+    .signup-h1,
+    .login-h1{
+        text-align: center;
+        color: #053c5e;
+    }
+
+    /* big screen login and signup inputs elements */
+    .login-signup-input{
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 3em;
+        border: 0;
+        font-weight: lighter;
+        /* font-size: 18px; */
+    }
+
+    /* small screen login and signup email and pass */
+    .login-signup-input-label{
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 16px;
+    }
+
+    .links-color{
+        color: #053c5e;
+    }
+
+    .login-btn{
+        margin-top: 15px;
+        /* font-weight: bold; */
+    }
+
+    .forgot-password{
+        font-weight: lighter;
+    }
+
+    .info-icon{
+        position: absolute;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+    
+    .continue-btn{
+        color: #053c5e;
+    }
+
+    .signup-btn{
+        margin-top: 15px;
+        color: #053c5e;
+        font-weight: bold;
+    }
+
+    .submit-btn{
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    .login-btn, 
+    .signup-btn,
+    .continue-btn,
+    .submit-btn{
+        width: 100%;
+        height: 3em;
+        padding: 0;
+    }
+
+    
+    /* hide small screen styles */
+
+    /* small screen login and signup navbar */
+    .login-page-navbar, 
+    .signup-page-navbar{
+        display: none;
+    }
+
+    
+    .bottom-popup{
+        position: fixed;
+        width: 20%;
+        height: 20vh;
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+        padding: 30px ;
+        bottom: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Style+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./stylesheets/style.css">
+
+    
+    <title>EduQuest-signup</title>
+
+</head>
+<body class="body">
+    <!-- signup page navbar for big screen -->
+
+        <!-- <nav class="big-screen-navbar">
+            <ul class="big-screen-nav-ul">
+                <li class="signup-navbar-brand">EduQuest</li>
+                <li class="empty-li"></li>
+            </ul>
+        </nav> -->
+
+    <!-- end of signup page navbar for big screen -->
+    
+    <!-- main div -->
+    <div class="signup-main-div">
+
+        <!-- signup page navbar for small screen -->
+        <nav class="signup-page-navbar">
+            <li class="material-symbols-outlined back-btn">arrow_back_ios</li>
+            <li class="text-signup">Sign Up</li>
+            <li class="material-symbols-outlined more-vert" onclick="moreVertPopup()">more_vert</li>
+        </nav>
+        <!-- end of signup page navbar for small screen -->
+
+        
+        
+
+        <!-- signup div -->
+        <div class="signup-section">
+
+            <form action="" method="post" class="signupForm">
+                
+                <!-- <div>
+                    <h1 class="signup-h1">EduQuest</h1>
+                </div> -->
+                
+                <!-- signup first forms inputs to display div -->
+                <div class="" id="firstdisplay">
+                    
+                    <label for="firstname" class="form-label login-signup-input-label text-dark">First name</label>
+                    <input type="text" placeholder="First name" class="form-control border border-1 border-secondary rounded-3 login-signup-input" id="firstname">
+
+                    <label for="lastname" class="form-label login-signup-input-label text-dark">Last name</label>
+                    <input type="text" placeholder="Last name" class="form-control border border-1 border-secondary rounded-3 login-signup-input" id="lastname">
+
+                    <label for="middlename" class="form-label login-signup-input-label text-dark">Middle name</label>
+                    <input type="text" placeholder="Last name" class="form-control border border-1 border-secondary rounded-3 login-signup-input" id="middlename">
+
+                    <label for="date" class="form-label login-signup-input-label text-dark">Date of birth</label>
+                    <input type="text" placeholder="mm/dd/yyyy" class="form-control border border-1 border-secondary rounded-3 login-signup-input" id="date">
+
+                    <a href="">
+                        <button type="button" class="btn btn-outline-dark border border-1 border-secondary rounded-3 continue-btn" onclick="hideAndDisplay()">Continue</button>
+                    </a>
+
+                    <a href="login.html">
+                        <button type="button" class="btn btn-dark rounded-3 login-btn">Login</button>
+                    </a>
+                    
+                </div>
+                <!-- end of signup first forms inputs to display div -->
+
+                
+                <!-- signup second forms inputs to display div -->
+                <div class="hide-input-div" id="seconddisplay">
+                    
+                    <label for="school" class="form-label login-signup-input-label text-dark">School</label>
+                    <input type="text" placeholder="Name of school" class="form-control border border-1 border-secondary rounded-3 login-signup-input" id="school">
+                    
+                    <label for="emailAddress" class="form-label login-signup-input-label text-dark">Email address</label>
+                    <input type="text" placeholder="Email address" class="form-control border border-1 border-secondary rounded-3 login-signup-input" id="emailAddress">
+
+                    <label for="password" class="form-label login-signup-input-label text-dark">Password</label>
+                    <input type="password" placeholder="Password" class="form-control border border-1 border-secondary rounded-3 login-signup-input" id="password">
+
+                    <label for="confirmPassword" class="form-label login-signup-input-label text-dark">Confirm password</label>
+                    <input type="password" placeholder="Confirm password" class="form-control border border-1 border-secondary rounded-3 login-signup-input" id="confirmPassword">
+
+                    <input type="checkbox" name="" class="checkbox form-check-input" id="signupCheckbox" checked>
+                    <span class="checkbox-info">I agree to all <a href="" class="links-color">Terms Of Service,</a> Privicy and Cookie Policy.</span>
+                                    
+                    <a href="">
+                        <button type="button" class="btn btn-success submit-btn">Submit</button>
+                    </a>
+
+                    <!-- <a href="login.html">
+                        <button type="button" class="login-btn">Login</button>
+                    </a> -->
+                
+                </div>
+                <!-- signup second forms inputs to display div -->
+                
+            </form>
+            
+            
+        </div>
+        <!-- end of signup div -->
+
+        <!-- pop up for sign up more vert -->
+        <div id="moreVert" class="bottom-popup">
+            <p>
+                more-vert 
+            </p>
+        </div>
+        <!-- end of pop up for sign up more vert -->
+
+    </div>
+    <!-- end of main div -->
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

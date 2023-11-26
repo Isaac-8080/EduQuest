@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Style+Script&display=swap" rel="stylesheet">
+        
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./stylesheets/style.css">
+
+    <title>EduQuest-login</title>
+</head>
+<body class="body">
+    
+    <!-- main div -->
+    <div class="login-main-div">
+        
+        <!-- login page navbar -->
+        <section class="login-page-navbar">
+            <span class="material-symbols-outlined back-btn">arrow_back_ios</span>
+            <span class="text-login">Login</span>
+            <span class="material-symbols-outlined more-vert" onclick="moreVertPopup()">more_vert</span>
+        </section>
+        <!-- end of login page navbar -->
+
+        <!-- login div -->
+        <section class="login-section">
+            
+            <form action="" method="post" class="loginForm">
+
+                <label for="login-email-input" class="form-label login-signup-input-label">Email address</label>
+                <!-- <span class="material-symbols-outlined info-icon" onclick="passwordInfoPopup()">info</span> -->
+                <input type="text" placeholder="Email address" class="form-control border border-1 border-secondary rounded-3 login-signup-input" id="login-email-input">
+                
+                <label for="login-password-input" class="form-label login-signup-input-label">Password</label>
+                <span class="material-symbols-outlined info-icon" onclick="passwordInfoPopup()">info</span>
+                <input type="password" placeholder="Password" class="form-control border border-1 border-secondary rounded-3 login-signup-input" id="login-pasword-input">
+                
+                <p class="forgot-password">
+                    <a href="" class="links-color">Forgot password?</a>
+                </p>
+                
+                <a href=""><input type="button" value="Log In" class="btn btn-dark rounded-3 login-btn"></a>
+                
+                <a href="signup.html"><input type="button" value="Sign Up" class="btn btn-outline-dark border border-1 border-secondary rounded-3 signup-btn"></a>
+                
+            </form>
+            
+        </section>
+        <!-- end of login div -->
+        
+
+        <!-- pop up for login password -->
+        <div id="pswdPopup" class="bottom-popup bg-dark">
+            <span class="material-symbols-outlined info-icon" onclick="passwordInfoPopup()">close</span>
+            <p class="mt-5">
+                login Password info
+            </p>
+        </div>
+        <!-- end of pop up for login password -->
+
+        <!-- pop up for login more vert -->
+        <div id="moreVert" class="bottom-popup">
+            <p>
+                more-vert 
+            </p>
+        </div>
+        <!-- end of pop up for login more vert -->
+        
+
+    </div>
+    <!-- end of main div -->
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
